@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="block_menu">
+                <a href='/about'>О нас</a>
+            </div>
+            <div class="block_menu">
+                <a href="">Локации</a>
+            </div>
+            <div class="block_menu">
+                <a href="">События</a>
+            </div>
+            <div class="block_menu">
+                <a href="/contact">Контакты</a>
+            </div>
+            <div class="number"> +7 000 000 00 00</div>
+            <button class="call">Заказать звонок</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Flask</h1>
+        <p>This is the home page of our Flask application.</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(88, 53, 19);
+    color: white;
+}
+
+main {
+    margin-top: 70px;
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    height: 50px;;
+}
+
+a:hover {
+    background-color: rgb(54, 31, 9);
+}
+a:active {
+    text-decoration:underline;
+}
+
+.block_menu {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.number{
+    display: inline-block;
+    position: absolute;
+    right: 250px;
+    line-height: 50px;
+}
+
+.call {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 50px;
+    color: rgb(88, 53, 19);
+    font-weight: 600;
+}
