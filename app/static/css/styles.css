@@ -54,6 +54,7 @@ footer p {
     margin: 0;
     display: block;
     line-height: 80px;
+    font-weight: 500;
 }
 
 form {
