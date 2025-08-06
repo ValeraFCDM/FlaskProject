@@ -20,6 +20,7 @@ def about():
 def form():
     contact_manager = {
         'name': 'Ivan A.',
+        'phone': '+7-(000)-000-00-00',
         'address': {
             'street': 'Qwerty Street',
             'city': 'MeowLand',
