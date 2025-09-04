@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: black;
+    text-align: center;
+    color: green;
+}
+
+header, footer {
+    box-sizing: border-box;
+    background-color: black;
+    color: green;
+    border: 2px solid green;
+    width: 100%;
+    position: fixed;
+    height: 50px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+
+footer{
+    bottom: 0px;
+}
+
+main {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+main form, .agents-list {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+form p {
+    margin: 0px;
+    text-align: left;
+}
+
+button {
+    background-color: gray;
+    color: green;
+    font-size: 18px;
+    width: 200px;
+    height: 40px;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+li {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.dossier {
+    display: inline;
+    margin-left: auto;
+    font-weight: 500;
+}
+
+header form {
+    text-align: left;
+    width: max-content;
+}
+header label {
+    display: inline;
+    margin-left: 100px;
+}
+
+header button {
+    background-color: black;
+    color: green;
+    font-size: 16px;
+    width: auto;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.secret-mode {
+    width: 45px;
+    height: 45px;
+    background-color: red;
+    border: 0px solid;
+    border-radius: 25px;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 1px;
+    font-size: 16px;
+
+}

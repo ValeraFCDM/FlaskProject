@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Новый агент{% endblock %}
+
+{% block content %}
+    <h1>Внесите нужные изменения в досье агента</h1>
+    <form method="POST">
+
+        <label for="name">Кодовое имя:</label>
+        <input type="text" id="name" name="name" placeholder="Никнейм агента в разведке"><br>
+
+        <label for="number">Контактный номер (для экстренной связи):</label>
+        <input type="tel" id="number" name="number" placeholder="Формат: х-ххх-ххх-хххх" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Для шифрованных сообщений"><br>
+
+        <div>Укажите уровень доступа агента:</div>
+        <p>
+            <input id="secret" name="access_level" type="radio" value="Секретно" >
+            <label for="secret">Секретно</label>
+        </p>
+        <p>
+            <input id="top_secret" name="access_level" type="radio" value="Совершенно секретно">
+            <label for="top_secret">Совершенно секретно</label>
+        </p><br>
+        <button type="submit" onclick="return confirm('Внести изменения в досье?')">Подтвердить</button>
+
+    </form>
+{% endblock %}

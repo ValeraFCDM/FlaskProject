@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Список шпионов{% endblock %}
+
+{% block content %}
+    <h1>Список активных агентов</h1>
+    <div class="agents-list">
+        <ol>
+            {% for agent in agents %}
+            <li>
+                {{ agent.code_name.title() }}
+                <div class="dossier">
+                    <a href="{{ url_for('get_agent', id=agent.id) }}">Просмотр досье</a>
+                </div>
+                ({{ agent.access_level }})
+            </li>
+            {% endfor %}
+        </ol>
+    </div><br>
+
+    <a href="{{ url_for('add_agent') }}">Добавить агента</a>
+{% endblock %}
